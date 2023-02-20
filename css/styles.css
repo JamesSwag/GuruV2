@@ -9,7 +9,7 @@ body{
 
 .topBar{
     height: 3rem;
-    width: 2000px;
+    width: 100%;
     background-color: #53a113;
     position: sticky;
     top: 0;
