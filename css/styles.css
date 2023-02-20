@@ -1,0 +1,329 @@
+/* Body Styling */ 
+
+body{
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* TopBar Styling */
+
+.topBar{
+    height: 3rem;
+    width: 100%;
+    background-color: #53a113;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* AppBar Styling Start */
+
+.appBar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: sticky;
+    top: 3rem;
+    background-color: white;
+    z-index: 1;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.navList a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.navList a:hover {
+    color: green;
+}
+
+.imgDiv {
+    display: flex;
+    height: 7rem;
+}
+
+.searchBar {
+    background-color: white;
+    border: solid 2px;
+    height: 3rem;
+    border-radius: 25px;
+    color: grey;
+    font-size: 1rem;
+    width: 13rem;
+    position: absolute;
+    right: 10rem;
+    cursor: pointer;
+}
+
+.searchBar:hover{
+    border-color: green;
+    color: green;
+}
+
+.menuBtn {
+    position: absolute;
+    border: none;
+    background-color: white;
+    right: 1rem;
+}
+
+.hamburgerIcon{
+    display: none;
+}
+
+.hamburgerIcon:hover{
+    color: #53a113;
+}
+
+@media (max-width: 1100px){
+    .menuBtn{
+        position: relative;
+    }
+    
+    .hamburgerIcon{
+        display: flex;
+        font-size: 1.6rem;
+    }
+
+    .navList{
+        display: none;
+    }
+}
+
+
+/* Upper Body Styling Start */
+
+.upperBodySection{
+    position: relative;
+}
+
+.upperBodySection img{
+    height: 31.4rem;
+} 
+
+.upperBodySection .upperDiv{
+    width: 30rem;
+    height: 31.4rem;
+    background-color: black;
+    text-align: center;
+    opacity: 0.75;
+    position: absolute;
+}
+
+.upperBodySection .upperDiv h1{
+    color: white;
+    font-size: 3rem;
+}
+
+#firstH1{
+    margin-top: 8rem;
+    color: white;
+}
+
+#emptyDiv{
+    position: absolute;
+    height: 31.4rem;
+    width: 7rem;
+    background-color: black;
+    opacity: 0.5;
+    left: 30rem;
+}
+
+.banner{
+    height: 5rem;
+    width: 100%;
+    padding-top: .5rem;
+    background-color: green;
+}
+
+.banner div{
+    text-align: center;
+    height: 4.5rem;
+    width: 100%;
+    background-color: #53a113;
+}
+
+/* About Body Styling */
+
+#AboutBody{
+    margin-bottom: 5rem;
+    padding: 0 2rem 0 2rem;
+}
+
+#AboutBody h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+#AboutBody p{
+    font-size: larger;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2;
+    color: #53a113;
+}
+
+.paragraphDiv{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+#AboutBody img{
+    height: 100px;
+}
+
+.Bold{
+    font-weight: 600;
+}
+
+#AboutBody .circularImgDiv{
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+}
+
+#AboutBody .circularImg{
+    height: 15rem;
+    border-radius: 50%;
+    border: solid 1px;
+    opacity: 0.75;
+}
+
+#AboutBody .circularImg:hover{
+    opacity: 1;
+}
+
+/* Menu Body Styling */
+
+.menuBody{
+    display: flex;
+    flex-direction: column;
+    background-color: #53a113;
+    padding: 1rem 2rem 0 2rem;
+    gap: 3rem;
+    height: 100rem;
+}
+
+.menuBody .ourMenu{
+    font-weight: 900;
+    font-size: 3rem;
+    color: white;
+}
+
+.menuBody .outerCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.menuBody .carousel{
+    display: flex;
+    overflow: hidden;
+    width: 1276px;
+}
+
+.menuBody .innerCarousel {
+    display: flex;
+    gap: 2rem;
+}
+
+.Card{
+    height: 22rem;
+    width: 25rem;
+    border: solid 2px;
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.Card img{
+    height: 18rem;
+    width: 25rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Card footer{
+    color: orange;
+    margin-top: 15px;
+}
+
+
+.menuBody .leftArrowBtn{
+    background-color: #53a113;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menuBody .rightArrowBtn{
+    background-color: #53a113;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menuBody .leftArrowBtn:hover{
+    color: black;
+}
+
+.menuBody .rightArrowBtn:hover{
+    color: black;
+}
+
+
+/* Locations Section Styling */
+
+#locationsSection{
+    padding: 0 2rem 0 2rem;
+}
+
+#locationsSection #locations{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #53a113;
+}
+
+
+#locationsSection .Boston{
+    padding: 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+#locationsSection p{
+    margin: 5px;
+    font-family: sans-serif;
+    color: #53a113;
+}
+
+#locationsSection img{
+    height: 25rem;
+    width: 40rem;
+    border: solid 1px;
+}
+
+#locationsSection .Somerville{
+    padding: 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
