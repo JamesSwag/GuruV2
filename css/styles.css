@@ -131,6 +131,7 @@ html, body{
 .upperBodySection .upperDiv h1{
     color: white;
     font-size: 3rem;
+    opacity: 1;
 }
 
 #firstH1{
