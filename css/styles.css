@@ -132,14 +132,14 @@ body{
     color: white;
 }
 
-#emptyDiv{
+/* #emptyDiv{
     position: absolute;
     height: 50vh;
     width: 7vw;
     background-color: black;
     opacity: 0.5;
     left: 32.3rem;
-}
+} */
 
 .banner{
     height: 5rem;
