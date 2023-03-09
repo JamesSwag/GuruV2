@@ -1,8 +1,8 @@
-import Home from "./Home.js"
+import Home from "./AppComponents/Home.js"
 import { Routes, Route } from "react-router-dom";
-import MenuPage from "./MenuPage.js";
-import TopBar from "./TopBar.js";
-import AppBar from "./AppBar.js";
+import MenuPage from "./AppComponents/MenuPage.js";
+import TopBar from "./AppComponents/TopBar.js";
+import AppBar from "./AppComponents/AppBar.js";
 
 
 function App(){
@@ -18,14 +18,3 @@ function App(){
     );
 }
 export default App;
-
-
-
-
-{/* <TopBar/>
-<AppBar/>
-<UpperBody/>
-<MenuBody/>
-<AboutBody/>
-<Locations/>
-<BottomBar/> */}

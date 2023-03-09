@@ -5,13 +5,13 @@ import { useState } from "react";
 
 function AppBar(){
 
-    const [textColor, setTextColor] = useState({home: 'white', ourMenu: 'white', ourPhilosphy: 'white', locations: 'white', catering: 'white'});
+    // const [textColor, setTextColor] = useState({home: 'white', ourMenu: 'white', ourPhilosphy: 'white', locations: 'white', catering: 'white'});
 
 
     return (
         <nav className="appBar">
             <div className="imgDiv">
-                <img src="css/images/Other/guru.jpg" alt=""/>
+                <img src={require("../Data/images/Other/guru.jpg")} alt=""/>
             </div>
             <button className="menuBtn" type="button"><FaBars className="hamburgerIcon" style={{fontSize: '35px'}}/></button>  
             <ul className="navList">
@@ -28,4 +28,3 @@ function AppBar(){
 
 
 export default AppBar;
-
