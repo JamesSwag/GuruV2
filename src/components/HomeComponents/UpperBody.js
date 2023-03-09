@@ -1,17 +1,16 @@
-
+import spices from './spices.jpg';
 
 function UpperBody(){
 
     return (
         <div>
             <div className="upperBodySection">
+                <img src={spices} alt=" "></img>
                 <div className="upperDiv">
                     <h1>Divine Indian Food</h1>
                     <h1>For</h1>
                     <h1>Brilliant Minds</h1>
                 </div>
-                <div id="emptyDiv"></div>
-                <img src="css/images/Other/spices.jpg" alt=" "></img>
             </div>
             <div className="banner">
                 <div> 

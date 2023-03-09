@@ -227,29 +227,3 @@ function MenuPage(props){
 export default MenuPage;
 
 
-
-
-// function changeMenuItems(menu){
-    //     switch(menu){
-    //         case 'AllItems':
-    //             setItemList(allItems);
-    //             setMenuName('All Items');
-    //             setButtonColors({allItems: "gold", combo: "white", appetizer: "white", biryani: "white", paratha: "white", beverage: "white", dessert: "white"});
-    //             break;
-    //         case 'Combos':
-    //             setItemList(combos);
-    //             setMenuName('Combos');
-    //             setButtonColors({allItems: "white", combo: "gold", appetizer: "white", biryani: "white", paratha: "white", beverage: "white", dessert: "white"});
-    //             break;
-    //         case 'Appetizers':
-    //             setItemList(appetizers);
-    //             setMenuName('Appetizers');
-    //             setButtonColors({allItems: "white", combo: "white", appetizer: "gold", biryani: "white", paratha: "white", beverage: "white", dessert: "white"});
-    //             break;
-    //         default:
-    //             setItemList(allItems);
-    //             setMenuName('All Items');
-    //             setButtonColors({allItems: "gold", combo: "white", appetizer: "white", biryani: "white", paratha: "white", beverage: "white", dessert: "white"});
-    //             break;
-    //     }
-    // };

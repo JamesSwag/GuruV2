@@ -1,0 +1,515 @@
+/* Body Styling */ 
+
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* TopBar Styling */
+
+.topBar{
+    height: 3rem;
+    width: 100%;
+    background-color: #53a113;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* AppBar Styling Start */
+
+.appBar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: sticky;
+    top: 3rem;
+    background-color: white;
+    z-index: 1;
+    width: 100vw;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.navList a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.navList a:hover {
+    color: green;
+}
+
+.imgDiv {
+    display: flex;
+    height: 7rem;
+}
+
+.searchBar {
+    background-color: white;
+    border: solid 2px;
+    height: 3rem;
+    border-radius: 25px;
+    color: grey;
+    font-size: 1rem;
+    width: 13rem;
+    position: absolute;
+    right: 10rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBar:hover{
+    border-color: green;
+    color: green;
+}
+
+.menuBtn {
+    position: absolute;
+    border: none;
+    background-color: white;
+    right: 1rem;
+}
+
+.hamburgerIcon{
+    display: none;
+}
+
+.hamburgerIcon:hover{
+    color: #53a113;
+}
+
+@media (max-width: 1100px){
+
+    
+    .menuBtn{
+        position: relative;
+    }
+    
+    .hamburgerIcon{
+        display: flex;
+        font-size: 1.6rem;
+    }
+
+    .navList{
+        display: none;
+    }
+}
+
+
+/* Upper Body Styling Start */
+
+.upperBodySection{
+    position: relative;
+    display: flex;
+}
+
+.upperBodySection img{
+    height: 32rem;
+    width: 100vw;
+} 
+
+.upperBodySection .upperDiv{
+    width: 40rem;
+    height: 32rem;
+    position: absolute;
+    background-color: black;
+    opacity: 0.75;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upperBodySection .upperDiv h1{
+    font-family: 'Great Vibes', cursive;
+    color: orange;
+    font-size: 75px;
+    opacity: 1;
+}
+
+.banner{
+    height: 5rem;
+    width: 100vw;
+    padding-top: 0.5rem;
+    background-color: green;
+}
+
+.banner div{
+    text-align: center;
+    height: 4rem;
+    width: 100%;
+    background-color: #53a113;
+}
+
+/* Menu Body Styling */
+
+.menuBody{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0 2rem;
+    gap: 2rem;
+    height: 90rem;
+}
+
+.menuBody h2{
+    color: #53a113;
+}
+
+.menuBody .outerCarousel{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 2rem;;
+}
+
+.menuBody .carousel{
+    display: flex;
+    overflow: hidden;
+    width: 1276px;
+}
+
+.menuBody .innerCarousel {
+    display: flex;
+    gap: 2rem;
+}
+
+.Card{
+    height: 22rem;
+    width: 25rem;
+    border: solid 2px;
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.Card img{
+    height: 18rem;
+    width: 26rem;
+}
+
+.Card footer{
+    color: orange;
+    margin-top: 15px;
+}
+
+
+.menuBody .leftArrowBtn{
+    height: 40px;
+    width: 45px;
+    border: none;
+    background-color: white;
+    color: #53a113;
+    cursor: pointer;
+}
+
+.menuBody .rightArrowBtn{
+    height: 40px;
+    width: 45px;
+    border: none;
+    background-color: white;
+    color: #53a113;
+    cursor: pointer;
+}
+
+.menuBody .leftArrowBtn:hover{
+    color: black;
+}
+
+.menuBody .rightArrowBtn:hover{
+    color: black;
+}
+
+.menuBody .icons{
+    font-size: 40px;
+}
+
+
+@media (max-width: 1000px) {
+    .menuBody .carousel{
+        display: flex;
+        overflow: hidden;
+        width: 404px;
+    }
+    
+    .appBar{
+        height: 10rem;
+    }
+}
+
+/* About Body Styling */
+
+#AboutBody{
+    margin-bottom: 5rem;
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.partOne{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.paragraphDiv{   
+    width: 40rem;
+}
+
+.partOne img{
+    height: 25rem;
+}
+
+.paragraphDiv p{
+    margin-top: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: large;
+    line-height: 2;
+    color: #53a113;
+}
+
+.paragraphDiv hr{   
+   border: solid 1px;
+   border-color: gray;
+}
+
+.paragraphDiv h1{
+    text-align: center;
+}
+
+.partTwo{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.partTwo img{
+    height: 40rem;
+}
+
+.paragraphDiv2{
+    width: 40rem;
+}
+
+.paragraphDiv2 p{
+    margin-top: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: large;
+    line-height: 2;
+    color: #53a113;
+}
+
+.paragraphDiv2 h1{
+    text-align: center;
+}
+
+.paragraphDiv2 hr{
+    border: solid 1px;
+    border-color: gray;
+}
+
+.partTwo img{
+    border: solid 2px;
+}
+
+.Bold{
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+
+/* Locations Section Styling */
+
+#locationsSection{
+    margin-top: 5rem;
+    padding: 0 2rem 0 2rem;
+}
+
+#locationsSection .Boston{
+    display: flex;
+    margin-bottom: 5rem;
+    justify-content: center;
+    gap: 8rem;
+}
+
+#locationsSection p{
+    margin: 5px;
+    font-family: sans-serif;
+    color: #53a113;
+}
+
+#locationsSection img{
+    height: 25rem;
+    width: 40rem;
+    border: solid 1px;
+}
+
+#locationsSection .Somerville{
+    display: flex;
+    margin-bottom: 5rem;
+    justify-content: center;
+    gap: 8rem;
+}
+
+/* BottomBar Styling */
+
+.BottomSection{
+    height: 40rem;
+    background-color: #53a113;
+}
+
+/* MenuPage Styling */
+
+.menuPage{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sideBar{
+    height: auto;
+    background-color: #53a113;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuCard{
+    width: 18rem;
+    box-shadow: 1px 2px 5px;
+
+}
+
+.cardText{
+    height: 4.5rem;
+}
+
+.top{
+    margin-bottom: 6rem;
+}
+
+.top h3{
+    color: white;
+}
+
+.top button{
+    border: none;
+    background-color: #53a113;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.menuItems{
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.menuItems li{
+    margin-top: 20px;
+}
+
+.menuItems button{
+    font-size: larger;
+    background-color: #53a113;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.itemDisplay{
+    overflow: scroll;
+    flex-grow: 1;
+}
+
+.menuCard img{
+    height: 14rem; 
+}
+
+.menuDisplay{
+    gap: 2rem;
+}
+
+
+
+@media (max-width: 1000px){
+    .sideBar{
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+    }
+
+    .menuCard{
+        width: 27rem;
+        height: 40rem;
+    }
+
+    .menuDisplay{
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .menuNameHeader{
+        justify-content: center;
+    }
+
+    .menuItems button{
+        font-size: 40px;
+    }
+
+    .menuCard img{
+        height: 20rem; 
+    }
+
+    .menuCard .cardTitle{
+        font-size: xx-large;
+    }
+
+    .menuCard .cardText{
+        font-size: xx-large;
+        height: 6rem;
+        overflow: scroll;
+    }
+
+    .menuCard .cardPrice{
+        font-size: xx-large;
+    }
+
+    .top button{
+        font-size: 50px; 
+        margin: 0;
+    }
+
+    .top h3{
+        display: none;
+    }
+
+    .greetingsHeader p{
+        font-size: xx-large;
+    }
+
+
+}
