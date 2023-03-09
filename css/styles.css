@@ -68,6 +68,9 @@ html, body{
     position: absolute;
     right: 10rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .searchBar:hover{
@@ -115,102 +118,41 @@ html, body{
 }
 
 .upperBodySection img{
-    height: 50vh;
+    height: 32rem;
     width: 100vw;
 } 
 
 .upperBodySection .upperDiv{
-    width: 30vw;
-    height: 50vh;
-    background-color: black;
-    text-align: center;
-    opacity: 0.75;
+    width: 40rem;
+    height: 32rem;
     position: absolute;
+    background-color: black;
+    opacity: 0.75;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .upperBodySection .upperDiv h1{
-    color: white;
-    font-size: 3rem;
+    font-family: 'Great Vibes', cursive;
+    color: orange;
+    font-size: 75px;
     opacity: 1;
 }
-
-#firstH1{
-    margin-top: 8rem;
-    color: white;
-}
-
-/* #emptyDiv{
-    position: absolute;
-    height: 50vh;
-    width: 7vw;
-    background-color: black;
-    opacity: 0.5;
-    left: 32.3rem;
-} */
 
 .banner{
     height: 5rem;
     width: 100vw;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     background-color: green;
 }
 
 .banner div{
     text-align: center;
-    height: 4.5rem;
+    height: 4rem;
     width: 100%;
     background-color: #53a113;
-}
-
-/* About Body Styling */
-
-#AboutBody{
-    margin-bottom: 5rem;
-    padding: 0 2rem 0 2rem;
-}
-
-#AboutBody h1{
-    font-weight: 900;
-    font-size: 3rem;
-}
-
-#AboutBody p{
-    font-size: larger;
-    font-family: 'Noto Sans', sans-serif;
-    line-height: 2;
-    color: #53a113;
-}
-
-.paragraphDiv{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-bottom: 5rem;
-}
-
-#AboutBody img{
-    height: 100px;
-}
-
-.Bold{
-    font-weight: 600;
-}
-
-#AboutBody .circularImgDiv{
-    display: flex;
-    gap: 10rem;
-    justify-content: center;
-}
-
-#AboutBody .circularImg{
-    height: 15rem;
-    border-radius: 50%;
-    border: solid 1px;
-    opacity: 0.75;
-}
-
-#AboutBody .circularImg:hover{
-    opacity: 1;
 }
 
 /* Menu Body Styling */
@@ -218,24 +160,22 @@ html, body{
 .menuBody{
     display: flex;
     flex-direction: column;
-    background-color: #53a113;
-    padding: 1rem 2rem 0 2rem;
-    gap: 3rem;
-    height: 100rem;
+    padding: 2rem 2rem 0 2rem;
+    gap: 2rem;
+    height: 90rem;
 }
 
-.menuBody .ourMenu{
-    font-weight: 900;
-    font-size: 3rem;
-    color: white;
+.menuBody h2{
+    color: #53a113;
 }
 
 .menuBody .outerCarousel{
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
     overflow: hidden;
+    align-items: center;
+    margin-bottom: 2rem;;
 }
 
 .menuBody .carousel{
@@ -255,17 +195,18 @@ html, body{
     border: solid 2px;
     text-align: center;
     background-color: white;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .Card img{
     height: 18rem;
-    width: 25rem;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 26rem;
 }
 
 .Card footer{
@@ -275,18 +216,20 @@ html, body{
 
 
 .menuBody .leftArrowBtn{
-    background-color: #53a113;
     height: 40px;
+    width: 45px;
     border: none;
-    color: white;
+    background-color: white;
+    color: #53a113;
     cursor: pointer;
 }
 
 .menuBody .rightArrowBtn{
-    background-color: #53a113;
     height: 40px;
+    width: 45px;
     border: none;
-    color: white;
+    background-color: white;
+    color: #53a113;
     cursor: pointer;
 }
 
@@ -298,25 +241,117 @@ html, body{
     color: black;
 }
 
+.menuBody .icons{
+    font-size: 40px;
+}
+
+
+@media (max-width: 1000px) {
+    .menuBody .carousel{
+        display: flex;
+        overflow: hidden;
+        width: 404px;
+    }
+    
+    .appBar{
+        height: 10rem;
+    }
+}
+
+/* About Body Styling */
+
+#AboutBody{
+    margin-bottom: 5rem;
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.partOne{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.paragraphDiv{   
+    width: 40rem;
+}
+
+.partOne img{
+    height: 25rem;
+}
+
+.paragraphDiv p{
+    margin-top: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: large;
+    line-height: 2;
+    color: #53a113;
+}
+
+.paragraphDiv hr{   
+   border: solid 1px;
+   border-color: gray;
+}
+
+.paragraphDiv h1{
+    text-align: center;
+}
+
+.partTwo{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.partTwo img{
+    height: 40rem;
+}
+
+.paragraphDiv2{
+    width: 40rem;
+}
+
+.paragraphDiv2 p{
+    margin-top: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: large;
+    line-height: 2;
+    color: #53a113;
+}
+
+.paragraphDiv2 h1{
+    text-align: center;
+}
+
+.paragraphDiv2 hr{
+    border: solid 1px;
+    border-color: gray;
+}
+
+.partTwo img{
+    border: solid 2px;
+}
+
+.Bold{
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
 
 /* Locations Section Styling */
 
 #locationsSection{
+    margin-top: 5rem;
     padding: 0 2rem 0 2rem;
 }
 
-#locationsSection #locations{
-    font-weight: 900;
-    font-size: 3rem;
-    color: #53a113;
-}
-
-
 #locationsSection .Boston{
-    padding: 0 5rem 0;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 5rem;
+    justify-content: center;
+    gap: 8rem;
 }
 
 #locationsSection p{
@@ -332,7 +367,148 @@ html, body{
 }
 
 #locationsSection .Somerville{
-    padding: 0 5rem 0;
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 5rem;
+    justify-content: center;
+    gap: 8rem;
+}
+
+/* BottomBar Styling */
+
+.BottomSection{
+    height: 40rem;
+    background-color: #53a113;
+}
+
+/* MenuPage Styling */
+
+.menuPage{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sideBar{
+    height: auto;
+    background-color: #53a113;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuCard{
+    width: 18rem;
+    box-shadow: 1px 2px 5px;
+
+}
+
+.cardText{
+    height: 4.5rem;
+}
+
+.top{
+    margin-bottom: 6rem;
+}
+
+.top h3{
+    color: white;
+}
+
+.top button{
+    border: none;
+    background-color: #53a113;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.menuItems{
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.menuItems li{
+    margin-top: 20px;
+}
+
+.menuItems button{
+    font-size: larger;
+    background-color: #53a113;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.itemDisplay{
+    overflow: scroll;
+    flex-grow: 1;
+}
+
+.menuCard img{
+    height: 14rem; 
+}
+
+.menuDisplay{
+    gap: 2rem;
+}
+
+
+
+@media (max-width: 1000px){
+    .sideBar{
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+    }
+
+    .menuCard{
+        width: 27rem;
+        height: 40rem;
+    }
+
+    .menuDisplay{
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .menuNameHeader{
+        justify-content: center;
+    }
+
+    .menuItems button{
+        font-size: 40px;
+    }
+
+    .menuCard img{
+        height: 20rem; 
+    }
+
+    .menuCard .cardTitle{
+        font-size: xx-large;
+    }
+
+    .menuCard .cardText{
+        font-size: xx-large;
+        height: 6rem;
+        overflow: scroll;
+    }
+
+    .menuCard .cardPrice{
+        font-size: xx-large;
+    }
+
+    .top button{
+        font-size: 50px; 
+        margin: 0;
+    }
+
+    .top h3{
+        display: none;
+    }
+
+    .greetingsHeader p{
+        font-size: xx-large;
+    }
+
+
 }
