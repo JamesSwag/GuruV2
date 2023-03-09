@@ -1,20 +1,31 @@
-import AppBar from "./AppBar.js"
-import UpperBody from "./UpperBody.js"
-import TopBar from "./TopBar";
-import AboutBody from "./AboutBody";
-import MenuBody from "./MenuBody.js";
-import Locations from "./Locations.js";
+import Home from "./Home.js"
+import { Routes, Route } from "react-router-dom";
+import MenuPage from "./MenuPage.js";
+import TopBar from "./TopBar.js";
+import AppBar from "./AppBar.js";
+
 
 function App(){
     return(
-        <div>
+        <>
             <TopBar/>
             <AppBar/>
-            <UpperBody/>
-            <AboutBody/>
-            <MenuBody/>
-            <Locations/>
-        </div>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/MenuPage" element={<MenuPage/>}/>
+            </Routes>
+        </>
     );
 }
 export default App;
+
+
+
+
+{/* <TopBar/>
+<AppBar/>
+<UpperBody/>
+<MenuBody/>
+<AboutBody/>
+<Locations/>
+<BottomBar/> */}
